@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<table>
+    <tr>
+         <input type="number" id="sophut"  placeholder="Nhập số phút">
+        <input type="number" id="giacuoc" placeholder="Nhập giá cước">
+    </tr>
+</table>
+        <button onclick="Check()">Tính tiền</button>
+        <h3>Result:</h3>
+        <div id="result"> Hiện giá tiền</div>
+    <script>
+        function Check(){
+            let a=document.getElementById("sophut").value;
+            let b=document.getElementById("giacuoc").value;
+            let result= a*b;
+            document.getElementById("result").innerHTML= result +"  "+"VNĐ"
+        }
+    </script>
+</body>
+</html>
